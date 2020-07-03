@@ -9,6 +9,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Pizzaria</title>
   </head>
   <body>
@@ -21,7 +22,7 @@
       >
         <button
           type="button"
-          class="btn btn-primary float-right align-self-end m-3"
+          class="btn btn-primary float-right align-self-end m-3 botaoEmCima"
         >
           Acompanhe seu pedido
         </button>
@@ -29,15 +30,22 @@
         <img
           src="./assets/logo-pizzaria.png"
           alt="Logo pizzaria"
-          class="img-fluid w-25 mt-n5 mb-1"
+          class="img-fluid w-50 mt-n5 mb-1"
         />
 
         <hr class="mb-4" style="width: 90%;" />
 
-        <h6 class="mb-5 text-secondary">
+        <h6 class="mb-5 text-secondary text-center">
           Utilize as opções disponíveis abaixo para selecionar seus produtos e
           realizar seu pedido
         </h6>
+
+        <button
+          type="button"
+          class="btn btn-primary float-right align-self-end mx-3 mb-3 align-self-center botaoEmBaixo"
+        >
+          Acompanhe seu pedido
+        </button>
       </div>
 
       <!-- Div Escolha de produtos -->
@@ -54,7 +62,7 @@
         </div>
 
         <div
-          class="d-flex justify-content-center align-items-center py-3 flex-row"
+          class="d-flex justify-content-center align-items-center py-3 flex-row classe1"
         >
           <div class="form-group col-md-6">
             <label>* Selecione um produto</label>
@@ -90,99 +98,101 @@
           <h4 class="font-weight-bold mt-2">Produtos do seu pedido</h4>
         </div>
 
-        <table class="table table-bordered mt-4">
-          <thead>
-            <tr>
-              <th scope="col" class="table-active">#</th>
-              <th scope="col" class="table-active">Produto</th>
-              <th scope="col" class="table-active">Qtd</th>
-              <th scope="col" class="table-active">Preço unit.</th>
-              <th scope="col" class="table-active">Sub. total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <img
-                  src="./assets/pizza-calabresa.jpg"
-                  alt="Pizza Calabresa"
-                  style="width: 100px;"
-                />
-              </th>
-              <td>
-                <div class="d-flex flex-column">
-                  <span>Pizza Calabresa</span>
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    style="width: 90px;"
+        <div class="table-responsive">
+          <table class="table table-bordered mt-4">
+            <thead>
+              <tr>
+                <th scope="col" class="table-active">#</th>
+                <th scope="col" class="table-active">Produto</th>
+                <th scope="col" class="table-active">Qtd</th>
+                <th scope="col" class="table-active">Preço unit.</th>
+                <th scope="col" class="table-active">Sub. total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="./assets/pizza-calabresa.jpg"
+                    alt="Pizza Calabresa"
+                    style="width: 100px;"
+                  />
+                </th>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>Pizza Calabresa</span>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      style="width: 90px;"
+                    >
+                      Remover
+                    </button>
+                  </div>
+                </td>
+                <td>Valor R$ 31,00</td>
+                <td>Valor R$ 41,00</td>
+                <td>Valor R$ 51,00</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="./assets/pizza-4-queijos.jpg"
+                    alt="Pizza 4 queijos"
+                    style="width: 100px;"
+                  />
+                </th>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>Pizza 4 queijos</span>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      style="width: 90px;"
+                    >
+                      Remover
+                    </button>
+                  </div>
+                </td>
+                <td>Valor R$ 31,00</td>
+                <td>Valor R$ 41,00</td>
+                <td>Valor R$ 51,00</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <img
+                    src="./assets/pizza-marguerita.jpg"
+                    alt="Pizza marguerita"
+                    style="width: 100px;"
+                  />
+                </th>
+                <td>
+                  <div class="d-flex flex-column">
+                    <span>Pizza Marguerita</span>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      style="width: 90px;"
+                    >
+                      Remover
+                    </button>
+                  </div>
+                </td>
+                <td>Valor R$ 31,00</td>
+                <td>Valor R$ 41,00</td>
+                <td>Valor R$ 51,00</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="table-dark">
+                  <span class="font-weight-bold float-right"
+                    >Total do pedido:</span
                   >
-                    Remover
-                  </button>
-                </div>
-              </td>
-              <td>Valor R$ 31,00</td>
-              <td>Valor R$ 41,00</td>
-              <td>Valor R$ 51,00</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <img
-                  src="./assets/pizza-4-queijos.jpg"
-                  alt="Pizza 4 queijos"
-                  style="width: 100px;"
-                />
-              </th>
-              <td>
-                <div class="d-flex flex-column">
-                  <span>Pizza 4 queijos</span>
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    style="width: 90px;"
-                  >
-                    Remover
-                  </button>
-                </div>
-              </td>
-              <td>Valor R$ 31,00</td>
-              <td>Valor R$ 41,00</td>
-              <td>Valor R$ 51,00</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <img
-                  src="./assets/pizza-marguerita.jpg"
-                  alt="Pizza marguerita"
-                  style="width: 100px;"
-                />
-              </th>
-              <td>
-                <div class="d-flex flex-column">
-                  <span>Pizza Marguerita</span>
-                  <button
-                    type="button"
-                    class="btn btn-danger"
-                    style="width: 90px;"
-                  >
-                    Remover
-                  </button>
-                </div>
-              </td>
-              <td>Valor R$ 31,00</td>
-              <td>Valor R$ 41,00</td>
-              <td>Valor R$ 51,00</td>
-            </tr>
-            <tr>
-              <td colspan="4" class="table-dark">
-                <span class="font-weight-bold float-right"
-                  >Total do pedido:</span
-                >
-              </td>
-              <td class="table-active">R$ 153,00</td>
-            </tr>
-          </tbody>
-        </table>
+                </td>
+                <td class="table-active">R$ 153,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <!-- Div de informações adicionais-->
@@ -274,7 +284,7 @@
 
           <button
             type="submit"
-            class="btn btn-primary mb-4 col-md-3 bg-success"
+            class="btn btn-primary mb-4 bg-success col-md-5 mt-2 border-0"
           >
             Enviar pedido
           </button>
@@ -299,9 +309,9 @@
           style="background-color: lightblue; width: 90%;"
         >
           <h6 class="mt-2">Código do pedido</h6>
-          <h1 style="font-size: 60px;">Q5PaXTkK</h1>
+          <h1 style="font-size: 275%;">Q5PaXTkK</h1>
           <hr class="mb-4" style="width: 90%;" />
-          <h6>Seu pedido foi envido com sucesso</h6>
+          <h6 class="text-center">Seu pedido foi enviado com sucesso</h6>
         </div>
       </div>
 

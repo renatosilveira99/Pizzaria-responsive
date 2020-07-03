@@ -1,0 +1,22 @@
+@media (max-width: 751px) {
+  .classe1 {
+    flex-direction: column !important;
+  }
+
+  .botaoEmCima {
+    visibility: hidden;
+  }
+
+  h1,
+  span,
+  h3,
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 751px) {
+  .botaoEmBaixo {
+    visibility: hidden;
+  }
+}
